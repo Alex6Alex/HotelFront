@@ -1,0 +1,39 @@
+.footer {
+  grid-row: 3 / 4;
+  justify-self: stretch;
+  align-self: stretch;
+
+  background-color: #FF9A40;
+
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+
+  .footer-info {
+    grid-column: 2 / 3;
+    justify-self: stretch;
+    align-self: stretch;
+
+    background-color: #FFC640;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 10% 1fr;
+
+    .footer-block {
+      justify-self: center;
+      align-self: center;
+
+      display: grid;
+      grid-template-rows: auto auto;
+
+      a {
+        color: #4F3D13;
+      }
+    }
+
+    .author-rights {
+      grid-column: 5 / 6;
+    }
+  }
+}

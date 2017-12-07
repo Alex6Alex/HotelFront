@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  height: 100%;
+
+  display: grid;
+  justify-content: stretch;
+  align-content: stretch;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #3E3E3E;
+  background-color: #fff3f3;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px auto 60px;
+    justify-content: stretch;
+    align-content: stretch;
+
+    @import './header.scss';
+    @import './content.scss';
+    @import './footer.scss'
+  }
+}
