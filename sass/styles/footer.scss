@@ -6,7 +6,7 @@
   background-color: #FF9A40;
 
   display: grid;
-  grid-template-columns: 150px auto 150px;
+  grid-template-columns: auto 1050px auto;
 
   .footer-info {
     grid-column: 2 / 3;
@@ -29,6 +29,7 @@
 
       a {
         color: #4F3D13;
+        margin: 0;
       }
     }
 

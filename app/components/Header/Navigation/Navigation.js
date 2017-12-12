@@ -31,7 +31,7 @@ export default class Navigation extends React.Component {
             <div className='right-border'></div>
           </div>
           <div className='navigation-menu-block'>
-            <Link to='/'>
+            <Link to='/services'>
               <div className='navigation-menu-item'>
                 Услуги
               </div>

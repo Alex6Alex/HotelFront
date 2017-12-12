@@ -9,9 +9,11 @@ export default class AddressInfo extends React.Component {
           <span className='fa fa-map-marker' aria-hidden='true'></span>
           <div className='address'>
             <p>Севастополь</p>
-            <p>ул. Севастопольская, 8</p>
+            <p>ул.Людмилы Бобковой, 3/4</p>
           </div>
-          <span className='how-to-find'>Как добраться?</span>
+          <span className='how-to-find'>
+            <a href='/#how-to-find'>Как добраться?</a>
+          </span>
         </div>
       </div>
     )

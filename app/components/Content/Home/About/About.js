@@ -4,9 +4,67 @@ export default class About extends React.Component {
   render() {
     return(
       <div className='about'>
-        <div className='divide-line'></div>
-        <h2>Информация для клиентов</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className='about-title'>
+          <div className='divide-line'></div>
+          <h2>Информация для клиентов</h2>
+        </div>
+        <div className='about-block'>
+          <div className='description'>
+            <p className='welcome-par'>
+              Рады приветствовать Вас в мини-отеле «Авия»
+            </p>
+            <p>
+              Современный мини-отель в городе Севастополе, в Казачьей бухте,
+              всего в 10 минутах ходьбы от моря,
+              и в 20 минутах езды от центра города.
+            </p>
+            <p>
+              Мы готовы представить Вашему вниманию  двухместные и трехместные
+              номера со всеми удобствами для комфортной остановки.
+              Номера включают в себя санузел, телевидение.
+              По всей территории мини-отеля работает wi-fi.
+              Присутствует кухня общего пользования для приготовления пищи,
+              столовая, а также небольшая библиотека.
+            </p>
+            <p>
+              Казачья бухта - это отдаленный от центра район города,
+              здесь расположен небольшой жилой микрорайон,
+              дачный поселок и воинские части. В пешей доступности песочные и
+              галечные пляжи, которые являются отличным местом для дайвинга.
+              Также неподалеку находится музейный историко-мемориальный
+              комплекс «35-я береговая батарея».
+            </p>
+            <p>
+              Те, кто путешествуют без машины, с легкостью могут добраться
+              до центра Севастополя на маршрутных такси, городских автобусах
+              или троллейбусе. В самом центре к Вашим услугам вся возможная
+              индустрия развлечений – рестораны, кинотеатры и театры, аквапарк,
+              дельфинарий, детские парки развлечений. Исторический центр города
+              привлекает уютными бухтами, нарядной набережной с прогулочными
+              яхтами и прибрежными ресторанчиками.
+            </p>
+          </div>
+          <div className='weather-info'>
+            <p>Погода сегодня</p>
+            <a href='https://clck.yandex.ru/redir/dtype=stred/pid=7/cid=1228/*https://yandex.ru/pogoda/959' target='_blank'>
+              <img src='https://info.weather.yandex.net/959/2.ru.png?domain=ru' alt='Яндекс.Погода'/>
+              <img width='1' height='1' src='https://clck.yandex.ru/click/dtype=stred/pid=7/cid=1227/*https://img.yandex.ru/i/pix.gif' alt=''/>
+            </a>
+          </div>
+          <div className='services'>
+            <p>
+              В стоимость входит:
+            </p>
+            <ul>
+              <li><span>проживание в номере;</span></li>
+              <li><span>обслуживание номеров и уборка;</span></li>
+              <li><span>зона wi-fi;</span></li>
+              <li><span>стоянка для машин;</span></li>
+              <li><span>хранение ценных вещей;</span></li>
+              <li><span>трансфер и регистрация.</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     )
   }

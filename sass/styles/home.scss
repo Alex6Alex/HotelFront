@@ -1,0 +1,231 @@
+.home-page {
+  padding: 20px 25px 20px 25px;
+  grid-column: 2 / 3;
+  justify-self: stretch;
+  align-self: stretch;
+
+  background-color: #ffffe6;
+
+  display: grid;
+  grid-template-rows: 400px auto auto;
+  grid-row-gap: 10px;
+
+  .slider {
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: stretch;
+
+    width: 1000px;
+    transition-property: background-image;
+    transition-duration: .5s;
+
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+
+    .left-side, .right-side {
+      &.left-side {
+        grid-column: 1 / 2;
+      }
+
+      &.right-side {
+        grid-column: 3 / 4;
+      }
+
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.2);
+      }
+
+      transition-property: background-color;
+      transition-duration: 0.5s;
+
+      justify-self: stretch;
+      align-self: stretch;
+
+      display: grid;
+
+      .prev-img, .next-img {
+        justify-self: center;
+        align-self: center;
+
+        height: 50px;
+        width: 50px;
+        outline-style: none;
+        border: 0;
+        border-radius: 25px;
+        text-align: center;
+        background-color: white;
+        cursor: pointer;
+
+        display: grid;
+
+        span {
+          justify-self: center;
+          align-self: center;
+
+          text-align: center;
+          font-size: 18pt;
+          color: red;
+        }
+      }
+    }
+
+    .center-side {
+      grid-column: 2 / 3;
+      justify-self: stretch;
+      align-self: stretch;
+
+      display: grid;
+      grid-template-rows: 350px 50px;
+
+      .slider-circles {
+        grid-row: 2 / 3;
+        justify-self: center;
+        align-self: center;
+
+        display: grid;
+        grid-template-rows: auto;
+        grid-auto-columns: 40px;
+        grid-column-gap: 5px;
+        grid-auto-flow: column;
+
+        .slider-circle {
+          justify-self: center;
+          align-self: center;
+
+          width: 20px;
+          height: 20px;
+          border: 2px solid white;
+          border-radius: 20px;
+          transition-property: background-color;
+          transition-duration: 0.3s;
+
+          &.active-circle {
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: stretch;
+
+    width: 1000px;
+
+    display: grid;
+    grid-template-rows: auto auto;
+
+    .about-title {
+      grid-row: 1 / 2;
+      justify-self: stretch;
+      align-self: stretch;
+
+      display: grid;
+      grid-template-rows: auto auto;
+
+      h2 {
+        grid-row: 2 / 3;
+
+        color: #696969;
+        margin-bottom: 0;
+      }
+
+      .divide-line {
+        grid-row: 1 / 2;
+        justify-self: stretch;
+        align-self: stretch;
+
+        border-top: 2px solid #A64E00;
+      }
+    }
+
+    .about-block {
+      grid-row: 2 / 3;
+      justify-self: stretch;
+      align-self: stretch;
+
+      display: grid;
+      grid-template-columns: 750px 250px;
+      grid-template-rows: auto auto;
+
+      .description {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+
+        p {
+          text-align: justify;
+
+          &:first-child {
+            font-size: 16pt;
+            color: #A64E00;
+          }
+        }
+      }
+
+      .weather-info {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self: center;
+        align-self: top;
+
+        p {
+          font-size: 16pt;
+          color: #A64E00;
+        }
+      }
+
+      .services {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+
+        p {
+          font-size: 16pt;
+          color: #A64E00;
+        }
+
+        ul {
+          list-style-type: square;
+          list-style-position: outside;
+
+          li {
+            color: #A64E00;
+            margin-bottom: 5px;
+
+            span {
+              color: #3E3E3E;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .map-block {
+    grid-row: 3 / 4;
+    justify-self: center;
+    align-self: stretch;
+
+    width: 1000px;
+
+    display: grid;
+
+    h2 {
+      color: #696969;
+    }
+
+    .divide-line {
+      grid-row: 1 / 2;
+      justify-self: stretch;
+      align-self: stretch;
+
+      border-top: 2px solid #A64E00;
+    }
+
+    .map {
+      justify-self: center;
+      align-self: stretch;
+    }
+  }
+}

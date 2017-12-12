@@ -14,7 +14,7 @@ export default class Index extends React.Component {
 						Chat application
 					</title>
 					<link rel='stylesheet' href='styles/style.css'/>
-					<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+					<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'/>
 				</head>
 				<body>
 					<Routes/>

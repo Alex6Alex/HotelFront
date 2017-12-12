@@ -23,7 +23,7 @@ export default class Routes extends React.Component {
 
         return(
             <Switch>
-                <Route exact path='/' component={Wrapper}/>
+                <Route path='/' component={Wrapper}/>
                 <Route component={NotFound}/>
             </Switch>
         )

@@ -1,0 +1,47 @@
+.services-page {
+  padding: 20px 25px 20px 25px;
+  grid-column: 2 / 3;
+  justify-self: stretch;
+  align-self: stretch;
+
+  background-color: #ffffe6;
+
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-template-rows: 50px auto;
+
+  h2 {
+    grid-row: 1 / 2;
+  }
+
+  .services-column {
+    grid-row: 2 / 3;
+    grid-auto-flow: column;
+
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+
+    .service {
+      grid-auto-flow: row;
+      justify-self: stretch;
+      align-self: stretch;
+
+      display: grid;
+      grid-template-columns: 300px auto;
+
+      span {
+        justify-self: center;
+        align-self: center;
+
+        font-size: 40pt;
+      }
+
+      p {
+        justify-self: stretch;
+        align-self: center;
+
+        margin: 0;
+      }
+    }
+  }
+}
