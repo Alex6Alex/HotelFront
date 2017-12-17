@@ -1,0 +1,123 @@
+.booking-page {
+  padding: 20px 0 20px 0;
+  grid-column: 2 / 3;
+  justify-self: stretch;
+  align-self: start;
+
+  background-color: #ffffe6;
+
+  display: grid;
+  grid-template-rows: auto auto;
+
+  .booking {
+    grid-row: 1 / 2;
+    align-self: start;
+    justify-self: center;
+
+    width: 1000px;
+
+    display: grid;
+    grid-template-rows: auto auto;
+
+    h2 {
+      grid-row: 1 / 2;
+
+      color: #696969;
+    }
+
+    .booking-form {
+      grid-row: 2 / 3;
+      align-self: start;
+      //justify-self: stretch;
+      width: 1000px;
+
+      display: grid;
+      grid-template-rows: 300px 200px 450px 100px;
+
+      .sub-form {
+        grid-auto-flow: row;
+        align-self: start;
+        justify-self: stretch;
+
+        display: grid;
+        grid-template-rows: 70px auto;
+
+        .sub-form-title {
+          grid-row: 1 / 2;
+          align-self: start;
+          justify-self: stretch;
+
+          display: grid;
+          grid-template-rows: 2px 68px;
+
+          .divide-line {
+            grid-row: 1 / 2;
+            justify-self: stretch;
+            align-self: stretch;
+
+            border-top: 2px solid #A64E00;
+          }
+
+          p {
+            grid-row: 2 / 3;
+
+            font-size: 16pt;
+            color: #A64E00;
+          }
+        }
+
+        .sub-form-fields {
+          grid-row: 2 / 3;
+          align-self: start;
+          //justify-self: stretch;
+          width: 1000px;
+
+          display: grid;
+          grid-template-columns: 500px 500px;
+
+          .fields-column {
+            grid-auto-flow: column;
+            justify-self: center;
+
+            label {
+              display: block;
+              margin-bottom: 10px;
+            }
+
+            .form-input {
+              display: block;
+
+              margin-bottom: 20px;
+              width: 400px;
+              font-size: 14pt;
+              color: #696969;
+              padding: 10px 20px 10px 20px;
+              border: 1px solid #696969;
+              border-radius: 10px;
+              outline-style: none;
+            }
+          }
+        }
+      }
+
+      .submit-block {
+        align-self: center;
+        justify-self: start;
+
+        display: grid;
+
+        .submit-button {
+          align-self: center;
+          justify-self: center;
+
+          font-size: 14pt;
+          background-color: green;
+          padding: 10px 20px 10px 20px;
+          border: 1px solid #696969;
+          border-radius: 10px;
+          outline-style: none;
+        }
+      }
+    }
+  }
+}

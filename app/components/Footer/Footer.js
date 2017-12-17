@@ -8,11 +8,11 @@ export default class Footer extends React.Component {
         <div className='footer-info'>
           <div className='footer-block'>
             <Link to='/'>Главная</Link>
-            <Link to='/'>Бронирование</Link>
+            <Link to='/booking'>Бронирование</Link>
           </div>
           <div className='footer-block'>
             <Link to='/'>Номера</Link>
-            <Link to='/'>Услуги</Link>
+            <Link to='/services'>Услуги</Link>
           </div>
           <div className='footer-block'>
             <Link to='/'>Контакты</Link>

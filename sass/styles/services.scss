@@ -1,5 +1,5 @@
 .services-page {
-  padding: 20px 25px 20px 25px;
+  padding: 20px 0 20px 0;
   grid-column: 2 / 3;
   justify-self: stretch;
   align-self: stretch;
@@ -7,40 +7,126 @@
   background-color: #ffffe6;
 
   display: grid;
-  grid-auto-columns: 1fr 1fr;
-  grid-template-rows: 50px auto;
+  grid-template-rows: auto auto;
 
-  h2 {
+  .services {
     grid-row: 1 / 2;
-  }
+    align-self: top;
+    justify-self: center;
 
-  .services-column {
-    grid-row: 2 / 3;
-    grid-auto-flow: column;
+    width: 1000px;
+    height: 500px;
 
     display: grid;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 100px 400px;
+    grid-template-columns: 1fr 1fr;
 
-    .service {
-      grid-auto-flow: row;
+    h2 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 3;
+
+      color: #696969;
+      margin-bottom: 0;
+    }
+
+    .services-column {
+      grid-row: 2 / 3;
+      grid-auto-flow: column;
+
+      display: grid;
+      grid-template-rows: 100px 100px 100px;
+      grid-row-gap: 15px;
+
+      .service {
+        grid-auto-flow: row;
+        justify-self: stretch;
+        align-self: top;
+
+        cursor: pointer;
+
+        display: grid;
+        grid-template-columns: 150px auto;
+
+        &:hover {
+          background-color: #ffffcc;
+          border-radius: 5px;
+        }
+
+        .service-icon {
+          justify-self: stretch;
+          align-self: stretch;
+
+          display: grid;
+
+          span {
+            justify-self: center;
+            align-self: center;
+
+            font-size: 50pt;
+          }
+        }
+
+        .service-name {
+          justify-self: stretch;
+          align-self: stretch;
+
+          display: grid;
+
+          p {
+            justify-self: stretch;
+            align-self: center;
+
+            margin: 0;
+            font-size: 14pt;
+          }
+        }
+      }
+    }
+  }
+
+  .service-description {
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: stretch;
+
+    width: 1000px;
+
+    display: grid;
+    grid-template-rows: auto auto;
+
+    .description-title {
+      grid-row: 1 / 2;
       justify-self: stretch;
       align-self: stretch;
 
       display: grid;
-      grid-template-columns: 300px auto;
+      grid-template-rows: auto auto;
 
-      span {
-        justify-self: center;
-        align-self: center;
+      h2 {
+        grid-row: 2 / 3;
 
-        font-size: 40pt;
+        color: #696969;
+        margin-bottom: 0;
       }
 
-      p {
+      .divide-line {
+        grid-row: 1 / 2;
         justify-self: stretch;
-        align-self: center;
+        align-self: stretch;
 
-        margin: 0;
+        border-top: 2px solid #A64E00;
+      }
+    }
+
+    .description-block {
+      grid-row: 2 / 3;
+      justify-self: stretch;
+      align-self: stretch;
+
+      display: grid;
+
+      p {
+        text-align: justify;
       }
     }
   }

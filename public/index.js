@@ -11,7 +11,7 @@ export default class Index extends React.Component {
 					<script src='https://use.fontawesome.com/5be1a557e9.js'></script>
 					<script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript'></script>
 					<title>
-						Chat application
+						Гостевой дом «Авия»
 					</title>
 					<link rel='stylesheet' href='styles/style.css'/>
 					<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'/>

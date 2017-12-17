@@ -3,7 +3,6 @@ require('babel-register')({
 });
 
 import express from 'express'
-import socket from 'socket.io'
 import favicon from 'serve-favicon'
 import path from 'path'
 import router from './server/routes/index.js'
@@ -32,18 +31,3 @@ app.use(express.static('public'));
 app.use(router);
 //favicon
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-
-//socket
-const io = socket(server);
-
-io.on('connection', (socket) => {
-	console.log('made socket connection', socket.id);
-
-	socket.on('chat', (message) => {
-		io.sockets.emit('chat', message)
-	});
-
-	socket.on('typing', (data) => {
-		socket.broadcast.emit('typing', data);
-	});
-});

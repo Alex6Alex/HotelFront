@@ -7,5 +7,7 @@
   grid-template-columns: auto 1050px auto;
 
   @import './home.scss';
+  @import './rooms.scss';
   @import './services.scss';
+  @import './booking.scss';
 }

@@ -9,12 +9,12 @@ export default class Slider extends React.Component {
       '../images/Hotel2.jpg',
       '../images/Hotel3.jpg',
       '../images/Hotel4.jpg'
-    ]
+    ];
 
     this.state = {
       imageIndex: 0,
       startImage: this.imagePaths[0]
-    }
+    };
   }
 
   componentDidMount() {
