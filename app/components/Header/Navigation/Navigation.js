@@ -10,7 +10,7 @@ export default class Navigation extends React.Component {
       { name: 'Бронирование', link: '/booking' },
       { name: 'Номера', link: '/rooms' },
       { name: 'Услуги', link: '/services' },
-      { name: 'Контакты', link: '/' }
+      { name: 'Контакты', link: '/contacts' }
     ];
   }
 

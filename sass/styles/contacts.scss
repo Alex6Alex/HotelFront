@@ -1,0 +1,102 @@
+.contacts-page {
+  padding: 20px 0 20px 0;
+  grid-column: 2 / 3;
+  justify-self: stretch;
+  align-self: start;
+
+  background-color: #ffffe6;
+
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+
+  .contact-title {
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: start;
+
+    width: 1000px;
+
+    h2 {
+      color: #696969;
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts-info {
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: start;
+
+    width: 1000px;
+
+    display: grid;
+    grid-template-rows: auto auto;
+
+    .contact-address {
+      grid-row: 1 / 2;
+      justify-self: stretch;
+      align-self: start;
+
+      display: grid;
+
+      .address-title {
+        justify-self: stretch;
+        align-self: stretch;
+
+        display: grid;
+        grid-template-rows: auto auto;
+
+        p {
+          grid-row: 2 / 3;
+
+          text-align: justify;
+          font-size: 16pt;
+          color: #A64E00;
+          margin: 0;
+        }
+
+        .divide-line {
+          grid-row: 1 / 2;
+          justify-self: stretch;
+          align-self: stretch;
+
+          border-top: 2px solid #A64E00;
+        }
+      }
+    }
+
+    .book-contacts {
+      grid-row: 2 / 3;
+      justify-self: stretch;
+      align-self: start;
+
+      display: grid;
+
+      .book-contacts-title {
+        justify-self: stretch;
+        align-self: stretch;
+
+        display: grid;
+        grid-template-rows: auto auto;
+
+        p {
+          grid-row: 2 / 3;
+
+          text-align: justify;
+          font-size: 16pt;
+          color: #A64E00;
+          margin: 0;
+        }
+
+        .divide-line {
+          grid-row: 1 / 2;
+          justify-self: stretch;
+          align-self: stretch;
+
+          border-top: 2px solid #A64E00;
+        }
+      }
+    }
+  }
+}

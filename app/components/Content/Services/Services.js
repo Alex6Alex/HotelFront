@@ -23,7 +23,7 @@ export default class Services extends React.Component {
   }
 
   componentDidMount() {
-    document.title = 'Услуги | ' + document.title;
+    document.title = 'Услуги | Гостевой дом «Авия»';
   }
 
   onSelect(selectedService) {

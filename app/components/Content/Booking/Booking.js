@@ -8,7 +8,7 @@ export default class Booking extends React.Component {
   }
 
   componentDidMount() {
-    document.title = 'Бронирование | ' + document.title;
+    document.title = 'Бронирование | Гостевой дом «Авия»';
   }
 
   render() {

@@ -7,8 +7,30 @@
   background-color: #ffffe6;
 
   display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 10px;
+
+  .rooms-description {
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: start;
+
+    width: 1000px;
+
+    h2 {
+      color: #696969;
+      margin-bottom: 0;
+    }
+
+    p {
+      color: #3E3E3E;
+      text-align: justify;
+      margin-bottom: 0;
+    }
+  }
 
   .rooms {
+    grid-row: 2 / 3;
     justify-self: center;
     align-self: start;
 
@@ -16,6 +38,13 @@
 
     display: grid;
     grid-row-gap: 25px;
+
+    .divide-line {
+      grid-row: 1 / 2;
+      justify-self: stretch;
+
+      border-top: 2px solid #A64E00;
+    }
 
     .room {
       grid-auto-flow: row;
@@ -47,7 +76,7 @@
         justify-self: stretch;
         align-self: stretch;
 
-        text-decoration: none;
+
         background-color: #FFFFCC;
         border-radius: 5px;
         color: #3E3E3E;
